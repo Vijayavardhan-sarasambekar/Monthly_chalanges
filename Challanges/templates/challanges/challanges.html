@@ -6,6 +6,9 @@
     {% endblock %}
 
     {% block content %}
+
+        {% include "challanges/include/header.html" with active_page="challanges" %}
+
         <h1>welcome to {{ month|title }} challenge</h1>
         {% if text is not None %}
             <h2>{{ text }}</h2>
