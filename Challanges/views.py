@@ -14,6 +14,7 @@ monthly_challenges={
     "june":"practice communication Skill",
     "july":"walk 20 min Every day",
     "august":"learn Django for 20min every day",
+    "september":"read learn apply",
     "october":None,
     "november":"",
     "December":"Have Fun"

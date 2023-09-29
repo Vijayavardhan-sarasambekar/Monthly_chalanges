@@ -1,13 +1,18 @@
 {% extends "base.html"%}
-
+{% load static %}
 
     {% block title_name %}
         {{ month|title }} challenges
     {% endblock %}
 
+    {% block css_style %}
+        <link rel="stylesheet" href="{% static "/challanges/challanges.css" %}">
+        <link rel="stylesheet"  href="{% static "/challanges/include/header.css" %}">
+    {% endblock %}
+
     {% block content %}
 
-        {% include "challanges/include/header.html" with active_page="challanges" %}
+        {% include "challanges/include/header.html" %} {% comment %}  with active_page="challanges {% endcomment %}
 
         <h1>welcome to {{ month|title }} challenge</h1>
         {% if text is not None %}
